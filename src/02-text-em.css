@@ -1,0 +1,31 @@
+body {
+  /* medium = 16px */
+  font-size: medium;
+}
+
+.padded {
+  font-size: 16px;
+  padding: 1em;
+}
+
+.box {
+  padding: 1em;
+  border-radius: 1em;
+  background-color: lightgray;
+}
+
+.box-small {
+  font-size: 12px;
+}
+
+.box-large {
+  font-size: 16px;
+}
+
+.slogan {
+  /* 19.2px */
+  font-size: 1.2em;
+  /* 23.033px */
+  padding: 1.2em;
+  background-color: #ccc;
+}

@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "light-server-pug -s . -w '**/*.css # # reloadcss' -p 9090"
+    "dev": "light-server-pug -s . -w '**/*.pug # #' -w '**/*.css # # reloadcss' -p 9090"
   },
   "keywords": [],
   "author": "Leo Nistor",

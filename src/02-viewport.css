@@ -1,0 +1,10 @@
+:root {
+  font-size: calc(0.5em + 1vw);
+}
+
+.square {
+  width: 90vmin;
+  height: 90vmin;
+  background-color: steelblue;
+  /* font-size: 4vw; */
+}

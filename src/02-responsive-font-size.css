@@ -1,0 +1,42 @@
+:root {
+  /* 12px */
+  font-size: 0.75em;
+}
+
+@media (min-width: 800px) {
+  :root {
+    /* 14px */
+    font-size: 0.875em;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    /* 16px */
+    font-size: 1em;
+  }
+}
+
+
+/* 
+  rems for font size, 
+  pixels for borders,
+  and ems for most other properties 
+*/
+.panel {
+  font-size: 1rem;
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 1px solid #999;
+}
+
+.panel>h2 {
+  margin-top: 0;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.panel.large {
+  font-size: 1.2rem;
+}

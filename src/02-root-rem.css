@@ -1,0 +1,17 @@
+/* ul {
+  font-size: 0.8em;
+} */
+
+/* 
+  rems for font size, 
+  pixels for borders,
+  and ems for most other properties 
+*/
+
+:root {
+  font-size: 1em;
+}
+
+ul {
+  font-size: .8rem;
+}
