@@ -1,0 +1,25 @@
+doctype html
+<html>
+<head>
+  title Implicit grid
+  link(rel="stylesheet", href="06-implicit-grid-portfolio.css")
+</head>
+<body>
+
+- var items = ["monkey", "eagle", "bird", "bear", "swan", "elephants", "owl"]
+
+mixin figtag(name)
+  img(src="img/" + name + ".jpg", alt=name)
+  figcaption= name
+
+.portfolio
+  each item in items
+    if item == "monkey" || item == "bird" || item == "swan"
+      figure.featured
+        +figtag(item)
+    else
+      figure
+        +figtag(item)
+
+</body>
+</html>

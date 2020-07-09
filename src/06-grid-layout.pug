@@ -1,0 +1,41 @@
+doctype html
+<html>
+<head>
+  title Grid layout
+  link(rel="stylesheet", href="06-grid-layout.css")
+</head>
+<body>
+.container
+  header
+    h1.page-heading Ink
+  nav
+    ul.site-nav
+      li: a(href="/") Home
+      li: a(href="/features") Features
+      li: a(href="/pricing") Pricing
+      li: a(href="/support") Support
+      li.nav-right
+        a(href="/about") About
+  main.main.tile
+    h1 Team collaboration done right
+    p Thousands of teams from all over the world turn to <b>Ink</b> to communicate and get things done.
+  .sidebar-top.tile
+    form.login-form
+      h3 Login
+      p
+        label(for="username") Username
+        input#username(name="username" type="text")
+      p
+        label(for="password") Password
+        input#password(name="password" type="password")
+      button(type="submit") Login
+  .sidebar-bottom.tile.centered
+    small Starting at
+    .cost
+      span.cost-currency $
+      span.cost-dollars 20
+      span.cost-cents .00
+    a.cta-button(href="/pricing") Sign up
+
+</body>
+</html>
