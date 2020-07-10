@@ -1,0 +1,42 @@
+doctype html
+<html>
+<head>
+  title Positioning Modal
+  link(rel="stylesheet", href="./07-positioning-modal.css")
+</head>
+<body>
+
+header.top-banner
+  .top-banner-inner
+    p
+    | Find out what's going on at Wombat Coffee each month. Sign up for our newsletter: 
+    button#open Sign up
+
+#modal.modal
+  .modal-backdrop
+  .modal-body
+    button#close.modal-close close
+    h2 Wombat Newsletter
+    p Sign up for our monthly newsletter. No spam. We promise!
+    form(action="/signup")
+      p
+        label(for="email") Email address: 
+        input(type="text", name="email")
+      p: button(type="submit") Submit
+
+.container
+  nav
+    .dropdown
+      .dropdown-label Main Menu
+      .dropdown-menu
+        ul.submenu
+          li: a(href="/") Home
+          li: a(href="/coffees") Coffees
+          li: a(href="/brewers") Brewers
+          li: a(href="/specials") Specials
+          li: a(href="/about") About us
+  h1 Wombat Coffee Roasters
+
+script(src="07-positioning-modal.js")
+</body>
+</html>
