@@ -1,0 +1,8 @@
+.blend {
+  min-height: 400px;
+  background-image: url(img/bear.jpg), url(img/bear.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -30vw, 30vw;
+  background-blend-mode: multiply;
+}
