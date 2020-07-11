@@ -1,0 +1,58 @@
+doctype html
+<html>
+<head>
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  title Responsive
+  link(rel="stylesheet", href="./08-responsive.css")
+</head>
+<body>
+
+header#header.page-header
+  .title
+    h1 Wombat Coffee Roasters
+    .slogan We love coffee
+
+nav#main-menu.menu
+  button#toggle-menu.menu-toggle toggle menu
+  .menu-dropdown
+    ul.nav-menu
+      li: a(href="/about") About
+      li: a(href="/shop") Shop
+      li: a(href="/menu") Menu
+      li: a(href="/brew") Brew
+
+aside#hero.hero.
+  Welcome to Wombat Coffee Roasters! We are
+  passionate about our craft, striving to bring you
+  the best hand-crafted coffee in the city.
+
+main#main
+  .row
+    section.column
+      h2.subtitle Single-origin
+      p.
+        We have built partnerships with small farms
+        around the world to hand-select beans at the
+        peak of season. We then carefully roast in
+        <a href="/batch-size.html">small batches</a>
+        to maximize their potential.
+    section.column
+      h2.subtitle Blends
+      p.
+        Our tasters have put together a selection of
+        carefully balanced blends. Our famous
+        <a href="/house-blend.html">house blend</a>
+        is available year round.
+    section.column
+      h2.subtitle Brewing Equipment
+      p.
+        We offer our favorite kettles, French
+        presses, and pour-over cones. Come to one of
+        our <a href="/classes.html">brewing
+        classes</a> to learn how to brew the perfect
+        pour-over cup.
+
+script(src="./08-responsive.js")
+</body>
+</html>
